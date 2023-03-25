@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'kaizen_data'
+puts KaizenData.hi(ARGV[0])
