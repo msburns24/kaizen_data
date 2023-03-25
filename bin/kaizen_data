@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'kaizen_data'
-puts KaizenData.hi(ARGV[0])
+
+if ARGV[0] == 'g' || ARGV[0] == 'generate'
+  puts "generate?"
+end

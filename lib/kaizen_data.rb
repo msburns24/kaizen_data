@@ -1,8 +1,5 @@
-class KaizenData
-  def self.hi(language = "english")
-    translator = Translator.new(language)
-    translator.hi
-  end
+module KaizenData
 end
 
-require "kaizen_data/translator"
+require "kaizen_data/generator"
+require "kaizen_data/insertion"
