@@ -11,7 +11,7 @@ module KaizenData::Insertion
 
     input_fields = {}
     args.each do { |field, value| input_fields[field] = value }
-    
+    end
     
   end
 

@@ -1,12 +1,9 @@
 #!/usr/bin/env ruby
 require 'kaizen_data'
 
-argv_original = ARGV.dup
-command = ARGV.shift
-
-case command
-when "g", "generate"
-  KaizenData::Generator.generate(ARGV)
+case ARGV[0]
+when "-h", "--help", "help"
+  KaizenData::Command.help
 else
-  puts "KaizenData: '#{command}' is not a kaizen_data command. See 'kaizen_data help'"
+  KaizenData::Command.execute ARGV
 end
